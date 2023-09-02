@@ -1,11 +1,11 @@
-import React from 'react'
-import Header from '../components/Header.jsx'
+import React, { useEffect } from 'react';
+import Header from '../components/Header.jsx';
 
 const Form = () => {
+ 
   return (
     <>
       <Header />
-
       <div className="nftbg">
         <div className="newnft">
           <p className="p1">CREATE</p>
@@ -17,7 +17,7 @@ const Form = () => {
             <label htmlFor="url">Import file</label>
             <input type="url" name="url" id="url" />
             <div className="photo_container">
-              <img src="" alt="pofile picture preview" />
+              <img src="" alt="profile picture preview" />
             </div>
           </section>
 
@@ -32,12 +32,12 @@ const Form = () => {
           <div className="arrow"> </div>
         </div>
 
-        <div className="btn_NFT">
+        <div className="btn_NFT" onClick="">
           <p className="btn_text_NFT">✨ Create Now ✨</p>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;
